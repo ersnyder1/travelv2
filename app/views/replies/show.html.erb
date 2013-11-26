@@ -1,0 +1,21 @@
+<div class="page-header">
+  <h3><%= @reply.user.full_name%>'s reply to <%= @reply.request.user.full_name %>'s travel requeest</h3>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>Expert</dt>
+  <dd><%= @reply.user.full_name %></dd>
+
+    <dt>Traveler</dt>
+  <dd><%= @reply.request.user.full_name %></dd>
+
+  <dt>Trip name</dt>
+  <dd><%= @reply.request.travel_to_city %></dd>
+
+  <dt>Request text</dt>
+  <dd><%= @reply.request.request_text %></dd>
+
+  <dt>Reply text</dt>
+  <dd><%= @reply.reply_text %></dd>
+
+</dl>
